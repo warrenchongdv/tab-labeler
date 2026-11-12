@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Tab Labeler",
   "version": "0.6.0",
-  "description": "Tab names you can tell apart. Each tab leads with the word that makes it different from your other tabs, and labels shrink as your tab bar fills up. Free, private, no account.",
+  "description": "Find the right tab on the first try. Each tab leads with the word only it has. No setup, no account, nothing leaves your browser.",
   "permissions": [
     "storage",
     "activeTab"

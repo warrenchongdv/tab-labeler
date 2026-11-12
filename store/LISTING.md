@@ -6,8 +6,8 @@ Upload file: `dist/tab-labeler-0.6.0.zip`
 
 **Name** (comes from manifest.json): Tab Labeler
 
-**Summary** (from manifest, max 132 chars):
-Tab names you can tell apart. Each tab leads with the word that makes it different from your other tabs, and labels shrink as your tab bar fills up. Free, private, no account.
+**Summary** (from manifest.json `description`, max 132 chars; the store rejects the zip if longer):
+Find the right tab on the first try. Each tab leads with the word only it has. No setup, no account, nothing leaves your browser.
 
 **Description:**
 ```

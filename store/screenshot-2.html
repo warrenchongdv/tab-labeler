@@ -1,0 +1,25 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Tab Labeler: cleanup</title>
+<link rel="stylesheet" href="store.css">
+<!-- Labels are the real cleanTitle() output from store/demo-labels-2.js -->
+<style>
+.rows{padding:10px 30px}
+.row{display:grid;grid-template-columns:28px 1fr 40px 330px;align-items:center;gap:14px;padding:15px 0;border-bottom:1px solid #EFECE6;font-size:18px}
+.row:last-child{border:0}
+.row .from{color:#8E8C87;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row .arrow{color:#A8894F;font-size:22px;text-align:center}
+.row .to{font-weight:600}
+</style></head><body>
+<div>
+  <h1>Clutter, gone.</h1>
+  <p class="sub">Site names, notification noise and store prefixes are stripped automatically.</p>
+</div>
+<div class="card rows">
+  <div class="row"><i class="ic ml">M</i><span class="from">Inbox (12) - you@company.com - Company Mail</span><span class="arrow">→</span><span class="to">Inbox (12)</span></div>
+  <div class="row"><i class="ic dc">D</i><span class="from">Q3 Board Report - Google Docs</span><span class="arrow">→</span><span class="to">Q3 Board Report</span></div>
+  <div class="row"><i class="ic az">A</i><span class="from">Amazon.com: Ergonomic Office Chair with Lumbar Support, Adjustable Armrests</span><span class="arrow">→</span><span class="to">Ergonomic Office Chair with…</span></div>
+  <div class="row"><i class="ic gh">G</i><span class="from">Fix checkout timeout · Issue #212 · acme/storefront</span><span class="arrow">→</span><span class="to">#212 Fix checkout timeout</span></div>
+  <div class="row"><i class="ic wb">N</i><span class="from">Home | Northwind Consulting</span><span class="arrow">→</span><span class="to">Northwind Consulting</span></div>
+  <div class="row"><i class="ic gs">G</i><span class="from">quarterly revenue forecast template - Google Search</span><span class="arrow">→</span><span class="to">🔍 quarterly revenue forecast…</span></div>
+</div>
+</body></html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Tab Labeler: popup</title>
+<link rel="stylesheet" href="store.css">
+<!-- The popup on the right is the real popup.html markup + popup.css, filled with example values. -->
+<link rel="stylesheet" href="../extension/popup.css">
+<style>
+body{width:1280px;height:800px;padding:0 80px;display:grid;grid-template-columns:1fr 400px;align-items:center;gap:70px;background:#F7F6F3}
+.left{display:flex;flex-direction:column;gap:30px}
+.left h1{font-size:56px;font-weight:650;letter-spacing:-.03em;margin:0;flex:none}
+.points{display:grid;gap:18px}
+.pt{display:flex;gap:16px;align-items:flex-start}
+.pt .n{flex:none;width:34px;height:34px;border-radius:50%;background:#151517;color:#F7F6F3;display:grid;place-items:center;font-weight:600;font-size:16px}
+.pt b{display:block;font-size:21px;font-weight:600}
+.pt span{font-size:17px;color:#6F6D69}
+.shot{zoom:1.25;width:320px;padding:14px;background:#F7F6F3;border:1px solid #E6E3DD;border-radius:20px;box-shadow:0 20px 50px rgba(0,0,0,.12);display:grid;gap:10px;font:14px/1.45 "Segoe UI",sans-serif;color:#151517}
+.shot h1{font-size:16px;letter-spacing:-.02em}
+</style></head><body>
+<div class="left">
+  <div>
+    <h1>Simple controls.</h1>
+    <p class="sub">It works on its own. When you want a say, it's one click away.</p>
+  </div>
+  <div class="points">
+    <div class="pt"><i class="n">1</i><div><b>Rename any page</b><span>Your label sticks every time you open that page.</span></div></div>
+    <div class="pt"><i class="n">2</i><div><b>Turn it off per site</b><span>Keep original titles where you want them.</span></div></div>
+    <div class="pt"><i class="n">3</i><div><b>Pick a length</b><span>Auto, or fixed Short, Medium or Long.</span></div></div>
+    <div class="pt"><i class="n">4</i><div><b>Report a bad label</b><span>Saved on your computer to improve the rules.</span></div></div>
+  </div>
+</div>
+<div class="shot">
+  <header>
+    <span class="mark" aria-hidden="true"></span>
+    <h1>Tab Labeler</h1>
+    <label class="switch"><input type="checkbox" checked><span></span></label>
+  </header>
+  <section class="card" style="border-radius:16px">
+    <p class="eyebrow">This tab</p>
+    <p class="orig">Project Atlas Roadmap - Google Docs</p>
+    <div class="row">
+      <input type="text" value="Roadmap v2">
+      <button id="save">Save</button>
+    </div>
+    <div class="row between">
+      <button class="link">Use automatic label</button>
+      <label class="check"><input type="checkbox"> Off on <span>docs.google.com</span></label>
+    </div>
+    <button class="link" style="justify-self:start">Label looks wrong? Report it</button>
+  </section>
+  <section class="card" style="border-radius:16px">
+    <p class="eyebrow">Label length</p>
+    <div class="seg"><button aria-pressed="true">Auto</button><button>Short</button><button>Medium</button><button>Long</button></div>
+    <p class="hint">Auto shrinks labels as you open more tabs and makes every tab start differently.</p>
+  </section>
+  <footer>Runs on your computer. Nothing leaves your browser.</footer>
+</div>
+</body></html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Tab Labeler: auto length</title>
+<link rel="stylesheet" href="store.css">
+<!-- 4 tabs: full clean titles (Auto = 32 chars). 12 tabs: real labelWindow() output at 9 chars (store/demo-labels.js). -->
+<style>.few .tab{flex:0 0 268px}</style>
+</head><body>
+<div>
+  <h1>Adapts as you work.</h1>
+  <p class="sub">Few tabs: full names. Tab bar filling up: just the word that tells them apart.</p>
+</div>
+<div>
+  <p class="label">4 tabs open</p>
+  <div class="strip few">
+    <div class="tab on"><i class="ic sh">S</i><span>Project Atlas Budget</span></div>
+    <div class="tab"><i class="ic dc">D</i><span>Project Atlas Roadmap</span></div>
+    <div class="tab"><i class="ic ji">J</i><span>PROJ-157 Pricing page redesign</span></div>
+    <div class="tab"><i class="ic dc">D</i><span>Customer Feedback Summary</span></div>
+  </div>
+  <div class="bar"></div>
+</div>
+<div>
+  <p class="label good">12 tabs open</p>
+  <div class="strip">
+    <div class="tab on"><i class="ic sh">S</i><span>Budget</span></div>
+    <div class="tab"><i class="ic dc">D</i><span>Roadmap</span></div>
+    <div class="tab"><i class="ic sl">P</i><span>Kickoff</span></div>
+    <div class="tab"><i class="ic no">N</i><span>Hiring</span></div>
+    <div class="tab"><i class="ic ml">M</i><span>Inbox (12)</span></div>
+    <div class="tab"><i class="ic ca">C</i><span>Weekly</span></div>
+    <div class="tab"><i class="ic ji">J</i><span>Login timeout</span></div>
+    <div class="tab"><i class="ic ji">J</i><span>Pricing</span></div>
+    <div class="tab"><i class="ic dc">D</i><span>Vendor</span></div>
+    <div class="tab"><i class="ic dc">D</i><span>Customer</span></div>
+    <div class="tab"><i class="ic sf">S</i><span>Acme Corp</span></div>
+    <div class="tab"><i class="ic no">N</i><span>Onboarding</span></div>
+  </div>
+  <div class="bar"></div>
+  <p class="note">Labels shrink as tabs pile up and grow back as you close them. <b>Pinned tabs don't count.</b></p>
+</div>
+</body></html>

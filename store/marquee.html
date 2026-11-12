@@ -1,0 +1,40 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Tab Labeler marquee</title>
+<link rel="stylesheet" href="store.css">
+<style>
+body{width:1400px;height:560px;background:#151517;color:#F2F0EB;padding:0 90px;display:grid;grid-template-columns:1fr 640px;align-items:center;gap:60px}
+.top{display:flex;align-items:center;gap:16px;margin-bottom:26px}
+.mark{width:44px;height:44px;border-radius:13px;background:linear-gradient(160deg,#CDB68E,#7d6640)}
+.name{font-size:30px;font-weight:600;letter-spacing:-.02em}
+h1{font-size:58px;line-height:1.05}
+.sub{color:#B9B6AF;font-size:22px;margin-top:18px}
+.label{color:#8E8C87}
+.label.good{color:#CDB68E}
+.strip{background:#26262A}
+.tab{background:#1E1E21;color:#B9B6AF;font-size:16px;padding:0 10px}
+.after .tab{background:#2C2C30;color:#F2F0EB}
+.after .tab.on{background:#F2F0EB;color:#151517;font-weight:600}
+.bar{background:#2C2C30}
+.after .bar{background:#F2F0EB}
+.stack,.stack>div{display:grid;gap:0;min-width:0}
+.stack{gap:30px}
+.after .bar{background:#2C2C30}
+</style></head><body>
+<div>
+  <div class="top"><span class="mark"></span><span class="name">Tab Labeler</span></div>
+  <h1>Find the right tab on the first try.</h1>
+  <p class="sub">No setup. Nothing leaves your browser.</p>
+</div>
+<div class="stack">
+  <div>
+    <p class="label">Without</p>
+    <div class="strip"><div class="tab"><i class="ic sh">S</i><span>Project Atlas Budget</span></div><div class="tab"><i class="ic dc">D</i><span>Project Atlas Roadmap</span></div><div class="tab"><i class="ic sl">P</i><span>Project Atlas Kickoff</span></div><div class="tab"><i class="ic ji">J</i><span>PROJ-157 Pricing</span></div><div class="tab"><i class="ic ji">J</i><span>PROJ-142 Fix login</span></div></div>
+    <div class="bar"></div>
+  </div>
+  <div class="after">
+    <p class="label good">With Tab Labeler</p>
+    <div class="strip"><div class="tab"><i class="ic sh">S</i><span>Budget</span></div><div class="tab on"><i class="ic dc">D</i><span>Roadmap</span></div><div class="tab"><i class="ic sl">P</i><span>Kickoff</span></div><div class="tab"><i class="ic ji">J</i><span>Pricing</span></div><div class="tab"><i class="ic ji">J</i><span>Login timeout</span></div></div>
+    <div class="bar"></div>
+  </div>
+</div>
+</body></html>

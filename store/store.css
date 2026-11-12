@@ -1,0 +1,18 @@
+/* Shared look for store images (screenshots 2-5, marquee). Same tokens as the popup. */
+*{box-sizing:border-box;margin:0}
+body{width:1280px;height:800px;background:#F7F6F3;font-family:"Segoe UI",Inter,sans-serif;color:#151517;padding:0 80px;display:flex;flex-direction:column;justify-content:center;gap:40px;overflow:hidden}
+h1{font-size:56px;font-weight:650;letter-spacing:-.03em}
+.sub{font-size:23px;color:#6F6D69;margin-top:12px}
+.label{font-size:15px;letter-spacing:.12em;text-transform:uppercase;color:#6F6D69;margin-bottom:12px}
+.label.good{color:#A8894F;font-weight:600}
+.strip{background:#DEE3EB;border-radius:14px 14px 0 0;padding:9px 9px 0;display:flex;gap:2px;overflow:hidden}
+.tab{flex:1;min-width:0;height:46px;background:#E9EDF3;border-radius:10px 10px 0 0;display:flex;align-items:center;gap:8px;padding:0 12px;font-size:17px}
+.tab.on{background:#fff}
+.tab span{white-space:nowrap;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,#000 70%,transparent);mask-image:linear-gradient(90deg,#000 70%,transparent)}
+.ic{flex:none;width:19px;height:19px;border-radius:5px;display:grid;place-items:center;font-size:11px;font-weight:700;font-style:normal;color:#fff}
+.sh{background:#2F8F5B}.dc{background:#3D6FD8}.sl{background:#E0A324}.no{background:#2B2B2E}.ml{background:#C9473D}.ca{background:#5A8DEE}.ji{background:#2563C9}.sf{background:#1C9AD6}.gh{background:#24292F}.az{background:#E08A2C}.gs{background:#4C7BD9}.wb{background:#6B5BD0}
+.bar{background:#fff;height:12px;border-radius:0 0 14px 14px}
+.note{font-size:19px;color:#6F6D69;margin-top:12px}
+.note b{color:#151517}
+.card{background:#fff;border:1px solid #E6E3DD;border-radius:18px}
+.gold{color:#A8894F}

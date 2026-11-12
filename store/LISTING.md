@@ -36,8 +36,10 @@ Free and open source: https://github.com/warrenchongdv/tab-labeler
 
 **Images:**
 - Store icon 128×128: `extension/icons/128.png`
-- Screenshot 1280×800: `store/screenshot-1.png`
+- Screenshots 1280×800, upload in this order: `store/screenshot-1.png` (before/after), `-2` (cleanup), `-3` (auto length), `-4` (popup), `-5` (privacy)
 - Small promo tile 440×280: `store/promo-small.png`
+- Marquee promo tile 1400×560: `store/marquee.png`
+- All images are 24-bit PNG (no alpha). Rebuild: open the matching .html in headless Chrome at that size; labels come from `store/demo-labels*.js`.
 
 **Website / support URL:** https://github.com/warrenchongdv/tab-labeler
 

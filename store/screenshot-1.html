@@ -1,65 +1,75 @@
 <!doctype html>
 <html><head><meta charset="utf-8"><title>Tab Labeler screenshot</title>
-<!-- Labels below are the real output of labelWindow() at Auto length for these 12 tabs. -->
+<!-- The "With Tab Labeler" labels are the real output of store/demo-labels.js. Re-run it if the rules change. -->
 <style>
 *{box-sizing:border-box;margin:0}
-body{width:1280px;height:800px;background:#F7F6F3;font-family:"Segoe UI",Inter,sans-serif;color:#151517;padding:0 80px;display:flex;flex-direction:column;justify-content:center;gap:52px;overflow:hidden}
-h1{font-size:60px;font-weight:650;letter-spacing:-.03em}
-.sub{font-size:24px;color:#6F6D69;margin-top:12px}
-.label{font-size:16px;letter-spacing:.12em;text-transform:uppercase;color:#6F6D69;margin-bottom:14px}
+body{width:1280px;height:800px;background:#F7F6F3;font-family:"Segoe UI",Inter,sans-serif;color:#151517;padding:0 80px;display:flex;flex-direction:column;justify-content:center;gap:44px;overflow:hidden}
+h1{font-size:56px;font-weight:650;letter-spacing:-.03em}
+.sub{font-size:23px;color:#6F6D69;margin-top:12px}
+.label{font-size:15px;letter-spacing:.12em;text-transform:uppercase;color:#6F6D69;margin-bottom:12px}
 .label.good{color:#A8894F;font-weight:600}
 .strip{background:#DEE3EB;border-radius:14px 14px 0 0;padding:9px 9px 0;display:flex;gap:2px;overflow:hidden}
-.tab{flex:1;min-width:0;height:48px;background:#E9EDF3;border-radius:10px 10px 0 0;display:flex;align-items:center;gap:8px;padding:0 10px;font-size:17px}
+.tab{flex:1;min-width:0;height:46px;background:#E9EDF3;border-radius:10px 10px 0 0;display:flex;align-items:center;gap:8px;padding:0 10px;font-size:17px}
 .tab.on{background:#fff}
 .tab span{white-space:nowrap;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,#000 65%,transparent);mask-image:linear-gradient(90deg,#000 65%,transparent)}
 .ic{flex:none;width:19px;height:19px;border-radius:5px;display:grid;place-items:center;font-size:11px;font-weight:700;font-style:normal;color:#fff}
-.w{background:#5B6470}.g{background:#4C7BD9}.y{background:#C9473D}.d{background:#3D8B5A}.s{background:#E08A2C}.h{background:#24292F}.m{background:#7A5BD0}
-.bar{background:#fff;height:14px;border-radius:0 0 14px 14px}
-.note{font-size:20px;color:#6F6D69;margin-top:14px}
+.sh{background:#2F8F5B}.dc{background:#3D6FD8}.sl{background:#E0A324}.no{background:#2B2B2E}.ml{background:#C9473D}.ca{background:#5A8DEE}.ji{background:#2563C9}.sf{background:#1C9AD6}
+.bar{background:#fff;height:12px;border-radius:0 0 14px 14px}
+.note{font-size:19px;color:#6F6D69;margin-top:12px}
 .note b{color:#151517}
+.feats{display:flex;gap:16px}
+.feat{flex:1;background:#fff;border:1px solid #E6E3DD;border-radius:14px;padding:16px 18px}
+.feat b{display:block;font-size:18px;font-weight:600;margin-bottom:4px}
+.feat span{font-size:15.5px;color:#6F6D69}
 </style></head><body>
 <div>
-  <h1>Tabs you can tell apart.</h1>
-  <p class="sub">With a full tab bar, Chrome shows about 5 letters per tab. Tab Labeler makes them count.</p>
+  <h1>Find the right tab on the first try.</h1>
+  <p class="sub">With a full tab bar, Chrome shows about five letters per tab. Tab Labeler puts the word that matters first.</p>
 </div>
 
 <div>
   <p class="label">Without</p>
   <div class="strip">
-    <div class="tab"><i class="ic w">W</i><span>Telomere - Wikipedia</span></div>
-    <div class="tab"><i class="ic g">G</i><span>telomere shortening aging</span></div>
-    <div class="tab"><i class="ic y">▶</i><span>telomeres explained</span></div>
-    <div class="tab"><i class="ic w">W</i><span>Hayflick limit</span></div>
-    <div class="tab"><i class="ic w">W</i><span>Telomerase reverse</span></div>
-    <div class="tab"><i class="ic g">G</i><span>telomere length cancer</span></div>
-    <div class="tab"><i class="ic d">D</i><span>Lab Notes - Google Docs</span></div>
-    <div class="tab"><i class="ic s">S</i><span>python - How do I</span></div>
-    <div class="tab on"><i class="ic h">G</i><span>GitHub - octo/tab</span></div>
-    <div class="tab"><i class="ic m">M</i><span>(3) Inbox - you@</span></div>
-    <div class="tab"><i class="ic w">W</i><span>Alternative lengthening</span></div>
-    <div class="tab"><i class="ic g">G</i><span>Sirtuins and aging</span></div>
+    <div class="tab"><i class="ic sh">S</i><span>Project Atlas Budget</span></div>
+    <div class="tab"><i class="ic dc">D</i><span>Project Atlas Roadmap</span></div>
+    <div class="tab"><i class="ic sl">P</i><span>Project Atlas Kickoff</span></div>
+    <div class="tab"><i class="ic no">N</i><span>Project Atlas Hiring</span></div>
+    <div class="tab"><i class="ic ml">M</i><span>Inbox (12) - you@</span></div>
+    <div class="tab"><i class="ic ca">C</i><span>Weekly Team Sync</span></div>
+    <div class="tab on"><i class="ic ji">J</i><span>PROJ-142 Fix login</span></div>
+    <div class="tab"><i class="ic ji">J</i><span>PROJ-157 Pricing</span></div>
+    <div class="tab"><i class="ic dc">D</i><span>Vendor Contract Draft</span></div>
+    <div class="tab"><i class="ic dc">D</i><span>Customer Feedback</span></div>
+    <div class="tab"><i class="ic sf">S</i><span>Acme Corp Renewal</span></div>
+    <div class="tab"><i class="ic no">N</i><span>Onboarding Checklist</span></div>
   </div>
   <div class="bar"></div>
-  <p class="note">Five tabs start with "Telom". Which one was the video?</p>
+  <p class="note">Six tabs look the same. You click through them one by one.</p>
 </div>
 
 <div>
   <p class="label good">With Tab Labeler</p>
   <div class="strip">
-    <div class="tab"><i class="ic w">W</i><span>Telomere</span></div>
-    <div class="tab"><i class="ic g">G</i><span>Shortening</span></div>
-    <div class="tab"><i class="ic y">▶</i><span>Explained</span></div>
-    <div class="tab"><i class="ic w">W</i><span>Hayflick</span></div>
-    <div class="tab"><i class="ic w">W</i><span>Reverse</span></div>
-    <div class="tab"><i class="ic g">G</i><span>Cancer</span></div>
-    <div class="tab"><i class="ic d">D</i><span>Lab Notes</span></div>
-    <div class="tab"><i class="ic s">S</i><span>Merge</span></div>
-    <div class="tab on"><i class="ic h">G</i><span>tab-labeler</span></div>
-    <div class="tab"><i class="ic m">M</i><span>(3) Inbox</span></div>
-    <div class="tab"><i class="ic w">W</i><span>Alternative</span></div>
-    <div class="tab"><i class="ic g">G</i><span>Sirtuins</span></div>
+    <div class="tab"><i class="ic sh">S</i><span>Budget</span></div>
+    <div class="tab"><i class="ic dc">D</i><span>Roadmap</span></div>
+    <div class="tab"><i class="ic sl">P</i><span>Kickoff</span></div>
+    <div class="tab"><i class="ic no">N</i><span>Hiring</span></div>
+    <div class="tab"><i class="ic ml">M</i><span>Inbox (12)</span></div>
+    <div class="tab"><i class="ic ca">C</i><span>Weekly</span></div>
+    <div class="tab on"><i class="ic ji">J</i><span>Login timeout</span></div>
+    <div class="tab"><i class="ic ji">J</i><span>Pricing</span></div>
+    <div class="tab"><i class="ic dc">D</i><span>Vendor</span></div>
+    <div class="tab"><i class="ic dc">D</i><span>Customer</span></div>
+    <div class="tab"><i class="ic sf">S</i><span>Acme Corp</span></div>
+    <div class="tab"><i class="ic no">N</i><span>Onboarding</span></div>
   </div>
   <div class="bar"></div>
-  <p class="note">Each tab leads with the word <b>only it has</b>. The icon already shows the site.</p>
+  <p class="note">Every tab leads with the word <b>only it has</b>. The icon already shows the app.</p>
+</div>
+
+<div class="feats">
+  <div class="feat"><b>Zero setup</b><span>Install it and keep working. No account.</span></div>
+  <div class="feat"><b>Adapts as you work</b><span>Labels shrink as tabs pile up, grow back as you close them.</span></div>
+  <div class="feat"><b>Private</b><span>Runs in your browser. Nothing is sent anywhere.</span></div>
 </div>
 </body></html>

@@ -11,11 +11,13 @@ Tab names you can tell apart. Each tab leads with the word that makes it differe
 
 **Description:**
 ```
-With 15 tabs open, Chrome shows about five letters per tab. Research one topic and every tab reads the same: "Telom", "Telom", "Telom".
+Find the right tab on the first try.
 
-Tab Labeler gives every tab a short label you can tell apart.
+With 12+ tabs open, Chrome shows about five letters per tab. Work on one project and half your tabs read the same: "Proje", "Proje", "PROJ-".
 
-• Every tab starts differently. Each label leads with the word only that tab has: "Shortening", "Hayflick", "Explained", instead of a row of identical stubs.
+Tab Labeler gives every tab a short label you can tell apart. No setup, no account: install it and keep working.
+
+• Every tab starts differently. Each label leads with the word only that tab has: "Budget", "Roadmap", "Pricing", instead of a row of identical stubs.
 • Fits your tab bar. Labels shrink to the key words as you open more tabs and grow back when you close them. Pinned tabs don't count.
 • Cleans up clutter. Removes site names, notification counts and "Amazon.com:" style prefixes. The tab's icon already shows the site.
 • Keeps up with pages that change their own titles (Gmail, YouTube, single-page apps).

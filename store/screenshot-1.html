@@ -1,0 +1,65 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Tab Labeler screenshot</title>
+<!-- Labels below are the real output of labelWindow() at Auto length for these 12 tabs. -->
+<style>
+*{box-sizing:border-box;margin:0}
+body{width:1280px;height:800px;background:#F7F6F3;font-family:"Segoe UI",Inter,sans-serif;color:#151517;padding:0 80px;display:flex;flex-direction:column;justify-content:center;gap:52px;overflow:hidden}
+h1{font-size:60px;font-weight:650;letter-spacing:-.03em}
+.sub{font-size:24px;color:#6F6D69;margin-top:12px}
+.label{font-size:16px;letter-spacing:.12em;text-transform:uppercase;color:#6F6D69;margin-bottom:14px}
+.label.good{color:#A8894F;font-weight:600}
+.strip{background:#DEE3EB;border-radius:14px 14px 0 0;padding:9px 9px 0;display:flex;gap:2px;overflow:hidden}
+.tab{flex:1;min-width:0;height:48px;background:#E9EDF3;border-radius:10px 10px 0 0;display:flex;align-items:center;gap:8px;padding:0 10px;font-size:17px}
+.tab.on{background:#fff}
+.tab span{white-space:nowrap;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,#000 65%,transparent);mask-image:linear-gradient(90deg,#000 65%,transparent)}
+.ic{flex:none;width:19px;height:19px;border-radius:5px;display:grid;place-items:center;font-size:11px;font-weight:700;font-style:normal;color:#fff}
+.w{background:#5B6470}.g{background:#4C7BD9}.y{background:#C9473D}.d{background:#3D8B5A}.s{background:#E08A2C}.h{background:#24292F}.m{background:#7A5BD0}
+.bar{background:#fff;height:14px;border-radius:0 0 14px 14px}
+.note{font-size:20px;color:#6F6D69;margin-top:14px}
+.note b{color:#151517}
+</style></head><body>
+<div>
+  <h1>Tabs you can tell apart.</h1>
+  <p class="sub">With a full tab bar, Chrome shows about 5 letters per tab. Tab Labeler makes them count.</p>
+</div>
+
+<div>
+  <p class="label">Without</p>
+  <div class="strip">
+    <div class="tab"><i class="ic w">W</i><span>Telomere - Wikipedia</span></div>
+    <div class="tab"><i class="ic g">G</i><span>telomere shortening aging</span></div>
+    <div class="tab"><i class="ic y">▶</i><span>telomeres explained</span></div>
+    <div class="tab"><i class="ic w">W</i><span>Hayflick limit</span></div>
+    <div class="tab"><i class="ic w">W</i><span>Telomerase reverse</span></div>
+    <div class="tab"><i class="ic g">G</i><span>telomere length cancer</span></div>
+    <div class="tab"><i class="ic d">D</i><span>Lab Notes - Google Docs</span></div>
+    <div class="tab"><i class="ic s">S</i><span>python - How do I</span></div>
+    <div class="tab on"><i class="ic h">G</i><span>GitHub - octo/tab</span></div>
+    <div class="tab"><i class="ic m">M</i><span>(3) Inbox - you@</span></div>
+    <div class="tab"><i class="ic w">W</i><span>Alternative lengthening</span></div>
+    <div class="tab"><i class="ic g">G</i><span>Sirtuins and aging</span></div>
+  </div>
+  <div class="bar"></div>
+  <p class="note">Five tabs start with "Telom". Which one was the video?</p>
+</div>
+
+<div>
+  <p class="label good">With Tab Labeler</p>
+  <div class="strip">
+    <div class="tab"><i class="ic w">W</i><span>Telomere</span></div>
+    <div class="tab"><i class="ic g">G</i><span>Shortening</span></div>
+    <div class="tab"><i class="ic y">▶</i><span>Explained</span></div>
+    <div class="tab"><i class="ic w">W</i><span>Hayflick</span></div>
+    <div class="tab"><i class="ic w">W</i><span>Reverse</span></div>
+    <div class="tab"><i class="ic g">G</i><span>Cancer</span></div>
+    <div class="tab"><i class="ic d">D</i><span>Lab Notes</span></div>
+    <div class="tab"><i class="ic s">S</i><span>Merge</span></div>
+    <div class="tab on"><i class="ic h">G</i><span>tab-labeler</span></div>
+    <div class="tab"><i class="ic m">M</i><span>(3) Inbox</span></div>
+    <div class="tab"><i class="ic w">W</i><span>Alternative</span></div>
+    <div class="tab"><i class="ic g">G</i><span>Sirtuins</span></div>
+  </div>
+  <div class="bar"></div>
+  <p class="note">Each tab leads with the word <b>only it has</b>. The icon already shows the site.</p>
+</div>
+</body></html>

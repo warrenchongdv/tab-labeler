@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Tab Labeler</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <span class="mark" aria-hidden="true"></span>
+    <h1>Tab Labeler</h1>
+    <label class="switch" title="Turn on or off everywhere"><input type="checkbox" id="enabled"><span></span></label>
+  </header>
+
+  <section id="tab" class="card">
+    <p class="eyebrow">This tab</p>
+    <p class="orig" id="orig">Open a website to rename its tab.</p>
+    <div class="row">
+      <input type="text" id="label" maxlength="60" placeholder="Custom label" aria-label="Custom label for this page">
+      <button id="save">Save</button>
+    </div>
+    <div class="row between">
+      <button class="link" id="reset">Use automatic label</button>
+      <label class="check"><input type="checkbox" id="offhere"> Off on <span id="host">this site</span></label>
+    </div>
+    <button class="link" id="report">Label looks wrong? Report it</button>
+  </section>
+
+  <section class="card" id="reports" hidden>
+    <p class="eyebrow">Reported labels · <span id="count">0</span></p>
+    <p class="hint">Saved only on this computer. Copy them as test cases to fix the rules.</p>
+    <div class="row between">
+      <button class="link" id="copy">Copy as test cases</button>
+      <button class="link" id="clear">Clear</button>
+    </div>
+  </section>
+
+  <section class="card">
+    <p class="eyebrow">Label length</p>
+    <div class="seg" role="group" aria-label="Label length">
+      <button data-size="auto">Auto</button><button data-size="short">Short</button><button data-size="medium">Medium</button><button data-size="long">Long</button>
+    </div>
+    <p class="hint" id="hint">Auto shrinks labels as you open more tabs and makes every tab start differently.</p>
+  </section>
+
+  <footer>Runs on your computer. Nothing leaves your browser.</footer>
+  <script src="popup.js"></script>
+</body>
+</html>

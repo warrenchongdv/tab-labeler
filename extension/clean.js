@@ -83,15 +83,6 @@
 
   // ---- Window-aware labels: every tab should START differently from its neighbours ----
   const key = w => w.toLowerCase().normalize('NFKD').replace(/[^a-z0-9]/g, '').slice(0, 5);
-  const TAGS = { 'youtube.com': 'YT', 'wikipedia.org': 'Wiki', 'google.com': 'G', 'github.com': 'GH', 'stackoverflow.com': 'SO', 'amazon.com': 'Amzn', 'reddit.com': 'Reddit', 'docs.google.com': 'Doc', 'mail.google.com': 'Mail', 'canvas.ucsd.edu': 'Canvas' };
-  function siteTag(url) {
-    try {
-      const h = new URL(url).hostname.replace(/^www\./, '');
-      for (const d in TAGS) if (h === d || h.endsWith('.' + d)) return TAGS[d];
-      const p = h.split('.').filter(x => !STOP.has(x));
-      const w = p[0] || h; return w.charAt(0).toUpperCase() + w.slice(1, 6);
-    } catch (e) { return ''; }
-  }
   function contentWords(s) {
     return s.replace(FILLER, '').replace(FILLER, '').split(/\s+/)
       .map(w => w.replace(/^[("'\[]+|[)"'\],:;.?!…]+$/g, ''))
@@ -113,22 +104,25 @@
     // How many tabs use each word (by its first 5 letters, which is all Chrome shows).
     const df = {};
     rows.forEach(r => new Set(r.words.map(key)).forEach(k => { df[k] = (df[k] || 0) + 1; }));
-    const starts = {};
-    rows.forEach(r => { const k = firstKey(r.label); starts[k] = (starts[k] || 0) + 1; });
-    rows.forEach(r => {
-      if (starts[firstKey(r.label)] < 2 || /^\(\d/.test(r.label)) return;
-      // Distinguishing words: skip filler verbs ("get", "rid") and vague descriptors ("explained").
-      const strong = w => (w.length >= 4 || /^[A-Z0-9]{2,}$/.test(w)) && !DESCR.has(w.toLowerCase());
-      const uniq = r.words.filter(w => df[key(w)] === 1 && strong(w));
-      if (uniq.length) {
-        const rest = r.words.filter(w => df[key(w)] !== 1);
-        r.label = compact(uniq.concat(rest).join(' '), maxLen);
-      }
-    });
-    // Anything still starting the same way gets its source in front: "YT Telomeres", "Wiki Telomere".
-    const again = {};
-    rows.forEach(r => { const k = firstKey(r.label); (again[k] = again[k] || []).push(r); });
-    Object.values(again).forEach(g => { if (g.length > 1) g.forEach(r => { const t = siteTag(r.e.url); if (t) r.label = t + ' ' + r.label; }); });
+    // Tabs whose labels start the same lead with a word only they have instead.
+    function lead(ok) {
+      const starts = {};
+      rows.forEach(r => { const k = firstKey(r.label); starts[k] = (starts[k] || 0) + 1; });
+      rows.forEach(r => {
+        if (starts[firstKey(r.label)] < 2 || /^\(\d/.test(r.label)) return;
+        const uniq = r.words.filter(w => df[key(w)] === 1 && ok(w));
+        if (uniq.length) {
+          const rest = r.words.filter(w => df[key(w)] !== 1);
+          r.label = compact(uniq.concat(rest).join(' '), maxLen);
+        }
+      });
+    }
+    // Pass 1: strong words only; skip short words and vague descriptors ("explained").
+    lead(w => (w.length >= 4 || /^[A-Z0-9]{2,}$/.test(w)) && !DESCR.has(w.toLowerCase()));
+    // Pass 2: still clashing? Any unique word beats a clash ("Explained" next to the YouTube icon).
+    lead(w => w.length >= 3);
+    // No site tags ("YT", "Wiki"): the tab's icon already shows the site, and a tag would eat
+    // most of the ~5 letters Chrome shows. A tab with no unique word keeps its plain label.
     rows.forEach(r => { out[r.e.id] = r.label; });
     return out;
   }

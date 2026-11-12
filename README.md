@@ -6,7 +6,7 @@ Tab names you can tell apart, even with 20 tabs open.
 `Lab Notes - Google Docs` → **Lab Notes**
 `python - How do I merge two dictionaries…? - Stack Overflow` → **How do I merge two…**
 
-- **Every tab starts differently.** Three telomere tabs become *Wiki Telomere*, *ALT pathway*, *YT Telomeres* instead of three tabs that all read "Telome…"
+- **Every tab starts differently.** Telomere tabs become *Shortening*, *Hayflick*, *Explained*, *Alternative* instead of a row of tabs that all read "Telom…". Each label leads with the word only that tab has; the tab's icon already shows the site.
 - **Fits your tab bar.** Labels shrink to the key words as you open more tabs, and grow back when you close them. Pinned tabs don't count.
 - Removes site names, notification counts, and clutter automatically
 - Keeps up with pages that change their own titles (Gmail, YouTube, Slack…)

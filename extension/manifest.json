@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Tab Labeler",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Tab names you can tell apart. Each tab leads with the word that makes it different from your other tabs, and labels shrink as your tab bar fills up. Free, private, no account.",
   "permissions": [
     "storage",

@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Tab Labeler",
+  "name": "Tabhead",
   "version": "0.6.0",
   "description": "Find the right tab on the first try. Each tab leads with the word only it has. No setup, no account, nothing leaves your browser.",
   "permissions": [

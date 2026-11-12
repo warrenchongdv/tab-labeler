@@ -1,4 +1,4 @@
-# Tab Labeler
+# Tabhead
 
 Tab names you can tell apart, even with 20 tabs open.
 

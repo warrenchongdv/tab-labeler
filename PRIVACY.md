@@ -1,8 +1,8 @@
-# Privacy policy: Tab Labeler
+# Privacy policy: Tabhead
 
 Last updated: November 11, 2026
 
-Tab Labeler does not collect, send, sell or share any data.
+Tabhead does not collect, send, sell or share any data.
 
 - **What it reads:** the title and web address of each page you open, so it can make a short tab label.
 - **Where that goes:** nowhere. It stays inside your browser. The extension has no servers, no analytics and no tracking.

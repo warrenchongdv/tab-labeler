@@ -1,10 +1,10 @@
 # Chrome Web Store listing: copy-paste sheet
 
-Upload file: `dist/tab-labeler-0.6.0.zip`
+Upload file: `dist/tabhead-0.6.0.zip`
 
 ## Store listing tab
 
-**Name** (comes from manifest.json): Tab Labeler
+**Name** (comes from manifest.json): Tabhead
 
 **Summary** (from manifest.json `description`, max 132 chars; the store rejects the zip if longer):
 Find the right tab on the first try. Each tab leads with the word only it has. No setup, no account, nothing leaves your browser.
@@ -15,7 +15,7 @@ Find the right tab on the first try.
 
 With 12+ tabs open, Chrome shows about five letters per tab. Work on one project and half your tabs read the same: "Proje", "Proje", "PROJ-".
 
-Tab Labeler gives every tab a short label you can tell apart. No setup, no account: install it and keep working.
+Tabhead gives every tab a short label you can tell apart. No setup, no account: install it and keep working.
 
 • Every tab starts differently. Each label leads with the word only that tab has: "Budget", "Roadmap", "Pricing", instead of a row of identical stubs.
 • Fits your tab bar. Labels shrink to the key words as you open more tabs and grow back when you close them. Pinned tabs don't count.
